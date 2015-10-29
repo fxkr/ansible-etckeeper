@@ -15,7 +15,19 @@ Caveat emptor, but I'm using it in production.
 
 ## How to use
 
-See EXAMPLES section in the module.
+See EXAMPLES section in the module, but you basically just put
+
+```
+- etckeeper: action=begin
+```
+
+at the beginning of your plays and
+
+```
+- etckeeper: action=commit msg="foo"
+```
+
+at the end of your plays.
 
 
 ## How well does it work?
